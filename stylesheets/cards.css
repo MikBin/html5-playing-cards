@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro:400,700|Lora:400,700,700italic|Montserrat:400,700|PT+Sans:400,700italic,700|Roboto+Slab:400,700|Droid+Serif:400,700,700italic|Merriweather:400,700,700italic|Arimo:400,700,700italic|Indie+Flower|Roboto|Titillium+Web:400,700,700italic|PT+Serif:400,700,700italic|Lobster|Lobster+Two:400,700,700italic|Cabin:400,700,700italic|Cabin+Condensed|Cabin+Sketch:400,700|Old+Standard+TT:400,700|Abril+Fatface|Gravitas+One|Amaranth:400,700,700italic|Ledger|Signika:400,700|Dancing+Script:400,700);
+/*variables*/
+/*
+both: 
+'Courgette', cursive; 'Dancing Script', cursive; 'Lobster', cursive;
+'Source Sans Pro', sans-serif;  --> italic is better
+'Roboto Slab', serif;  , 'PT Sans', sans-serif;  ,  'Cabin', sans-serif;, 'Signika', sans-serif;,'Lora', serif; 'PT Serif', serif; , 'Droid Serif', serif; --> very readable and clean
+'Montserrat', sans-serif; --> italic better
+'Abril Fatface', cursive;  --> heavy
+'Ledger', serif; --> very readable (the-ten letter-spacing:-0.2vw)
+*/
+/*shadows*/
+/*colors*/
+/*background colors*/
+/*red and pink can both be a little bit darker in multicolour*/
+/*mixins*/
+/* line 64, ../sass/cards.scss */
+.card-wrapper-normal, .card-wrapper-small {
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1.2vw 2.4vw, rgba(0, 0, 0, 0.22) 0 0.96vw 0.84vw;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1.2vw 2.4vw, rgba(0, 0, 0, 0.22) 0 0.96vw 0.84vw;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1.2vw 2.4vw, rgba(0, 0, 0, 0.22) 0 0.96vw 0.84vw;
+}
+
+/* line 68, ../sass/cards.scss */
+div.fulldeck {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 74, ../sass/cards.scss */
+.left-col, .right-col, .middle-col, .central-rank {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 80, ../sass/cards.scss */
+body {
+  background: #eee;
+}
+
+/* line 84, ../sass/cards.scss */
+.left-suit, .right-suit, .center-suit, .backgrd-suit {
+  font-family: Times New Roman, Times, serif;
+}
+
+/* line 88, ../sass/cards.scss */
+.digit {
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+  /*with dancing script*/
+}
+
+/* line 95, ../sass/cards.scss */
+.spades {
+  color: #2222ff;
+}
+
+/* line 99, ../sass/cards.scss */
+.clubs {
+  color: #009900;
+}
+
+/* line 103, ../sass/cards.scss */
+.hearts {
+  color: #DD00DD;
+}
+
+/* line 107, ../sass/cards.scss */
+.diams {
+  color: #F00;
+}
+
+/* line 111, ../sass/cards.scss */
+div.fulldeck {
+  height: auto;
+  width: auto;
+  position: relative;
+  margin: 30px 0px 30px 0px;
+}
+
+/* line 120, ../sass/cards.scss */
+.card-wrapper-normal {
+  position: relative;
+  width: 6vw;
+  height: 9vw;
+  font-size: 0.48vw;
+  margin: auto;
+  background: #DDD;
+  border-radius: 5%;
+}
+/* line 132, ../sass/cards.scss */
+.card-wrapper-normal.the-deuce .backgrd-suit, .card-wrapper-normal.the-deuce .central-rank, .card-wrapper-normal.the-three .backgrd-suit, .card-wrapper-normal.the-three .central-rank, .card-wrapper-normal.the-four .backgrd-suit, .card-wrapper-normal.the-four .central-rank, .card-wrapper-normal.the-five .backgrd-suit, .card-wrapper-normal.the-five .central-rank, .card-wrapper-normal.the-six .backgrd-suit, .card-wrapper-normal.the-six .central-rank, .card-wrapper-normal.the-seven .backgrd-suit, .card-wrapper-normal.the-seven .central-rank, .card-wrapper-normal.the-eight .backgrd-suit, .card-wrapper-normal.the-eight .central-rank, .card-wrapper-normal.the-nine .backgrd-suit, .card-wrapper-normal.the-nine .central-rank, .card-wrapper-normal.the-ten .backgrd-suit, .card-wrapper-normal.the-ten .central-rank {
+  display: none;
+}
+/* line 137, ../sass/cards.scss */
+.card-wrapper-normal.spades {
+  background: #D5A000;
+}
+/* line 141, ../sass/cards.scss */
+.card-wrapper-normal.clubs {
+  background: #ddd;
+}
+/* line 145, ../sass/cards.scss */
+.card-wrapper-normal.diams {
+  background: #003333;
+}
+/* line 149, ../sass/cards.scss */
+.card-wrapper-normal.hearts {
+  background: #222;
+}
+
+/* line 154, ../sass/cards.scss */
+.card-wrapper-small {
+  position: relative;
+  width: 6vw;
+  height: 9vw;
+  font-size: 0.48vw;
+  margin: auto;
+  background: #DDD;
+  border-radius: 5%;
+}
+/* line 166, ../sass/cards.scss */
+.card-wrapper-small.the-deuce .left-col, .card-wrapper-small.the-deuce .middle-col, .card-wrapper-small.the-deuce .right-col, .card-wrapper-small.the-three .left-col, .card-wrapper-small.the-three .middle-col, .card-wrapper-small.the-three .right-col, .card-wrapper-small.the-four .left-col, .card-wrapper-small.the-four .middle-col, .card-wrapper-small.the-four .right-col, .card-wrapper-small.the-five .left-col, .card-wrapper-small.the-five .middle-col, .card-wrapper-small.the-five .right-col, .card-wrapper-small.the-six .left-col, .card-wrapper-small.the-six .middle-col, .card-wrapper-small.the-six .right-col, .card-wrapper-small.the-seven .left-col, .card-wrapper-small.the-seven .middle-col, .card-wrapper-small.the-seven .right-col, .card-wrapper-small.the-eight .left-col, .card-wrapper-small.the-eight .middle-col, .card-wrapper-small.the-eight .right-col, .card-wrapper-small.the-nine .left-col, .card-wrapper-small.the-nine .middle-col, .card-wrapper-small.the-nine .right-col, .card-wrapper-small.the-ten .left-col, .card-wrapper-small.the-ten .middle-col, .card-wrapper-small.the-ten .right-col {
+  display: none;
+}
+/* line 171, ../sass/cards.scss */
+.card-wrapper-small .left-suit, .card-wrapper-small .right-suit {
+  font-size: 420%;
+}
+/* line 175, ../sass/cards.scss */
+.card-wrapper-small .left-rank, .card-wrapper-small .right-rank {
+  font-size: 360%;
+}
+/* line 179, ../sass/cards.scss */
+.card-wrapper-small.spades {
+  background: #D5A000;
+}
+/* line 183, ../sass/cards.scss */
+.card-wrapper-small.clubs {
+  background: #ddd;
+}
+/* line 187, ../sass/cards.scss */
+.card-wrapper-small.diams {
+  background: #003333;
+}
+/* line 191, ../sass/cards.scss */
+.card-wrapper-small.hearts {
+  background: #222;
+}
+
+/* line 197, ../sass/cards.scss */
+.left-column, .right-column {
+  width: 15%;
+  position: absolute;
+  text-align: center;
+}
+
+/* line 203, ../sass/cards.scss */
+.left-column {
+  left: 0;
+  top: 0;
+}
+
+/* line 208, ../sass/cards.scss */
+.right-column {
+  right: 0;
+  bottom: 0;
+}
+
+/* line 213, ../sass/cards.scss */
+.left-suit {
+  font-size: 350%;
+  font-weight: bold;
+  margin-left: 8%;
+}
+
+/* line 219, ../sass/cards.scss */
+.left-rank {
+  font-size: 300%;
+  font-weight: bold;
+  margin-left: 8%;
+}
+
+/* line 225, ../sass/cards.scss */
+.right-suit {
+  display: block;
+  font-size: 350%;
+  font-weight: bold;
+  margin-right: 8%;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 234, ../sass/cards.scss */
+.right-rank {
+  display: block;
+  font-size: 300%;
+  font-weight: bold;
+  margin-right: 8%;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 243, ../sass/cards.scss */
+.center-column {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 70%;
+  height: 100%;
+}
+
+/* line 251, ../sass/cards.scss */
+.center-suit {
+  font-size: 2.16vw;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 258, ../sass/cards.scss */
+.up-side-down {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 262, ../sass/cards.scss */
+.left-col, .right-col {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 100%;
+}
+
+/* line 271, ../sass/cards.scss */
+.left-col {
+  left: 0;
+}
+
+/* line 275, ../sass/cards.scss */
+.right-col {
+  right: 0;
+}
+
+/* line 279, ../sass/cards.scss */
+.middle-col {
+  position: absolute;
+  left: 33%;
+  top: 0;
+  width: 34%;
+  height: 100%;
+}
+
+/* line 289, ../sass/cards.scss */
+.central-rank {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 298, ../sass/cards.scss */
+.central-rank > div {
+  font-size: 5.28vw;
+  line-height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 306, ../sass/cards.scss */
+.backgrd-suit {
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 310, ../sass/cards.scss */
+.backgrd-suit > div {
+  opacity: 0.35;
+  font-size: 9.12vw;
+  line-height: 92%;
+}
+
+/* line 318, ../sass/cards.scss */
+.the-ten .digit {
+  letter-spacing: -0.2vw;
+}
+/* line 322, ../sass/cards.scss */
+.the-ten .left-col, .the-ten .right-col {
+  line-height: 100%;
+}
+/* line 327, ../sass/cards.scss */
+.the-ten .center-column .center-suit {
+  font-size: 1.92vw;
+}
+/* line 333, ../sass/cards.scss */
+.the-ten.card-wrapper-small .central-rank > .digit {
+  letter-spacing: -0.8vw;
+  font-size: 4.56vw;
+  margin-left: -0.1vw;
+}
+
+/* line 342, ../sass/cards.scss */
+.the-nine .left-col, .the-nine .right-col {
+  line-height: 100%;
+}

@@ -1,0 +1,308 @@
+@import "flex.less";
+@import url(https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro:400,700|Lora:400,700,700italic|Montserrat:400,700|PT+Sans:400,700italic,700|Roboto+Slab:400,700|Droid+Serif:400,700,700italic|Merriweather:400,700,700italic|Arimo:400,700,700italic|Indie+Flower|Roboto|Titillium+Web:400,700,700italic|PT+Serif:400,700,700italic|Lobster|Lobster+Two:400,700,700italic|Cabin:400,700,700italic|Cabin+Condensed|Cabin+Sketch:400,700|Old+Standard+TT:400,700|Abril+Fatface|Gravitas+One|Amaranth:400,700,700italic|Ledger|Signika:400,700|Dancing+Script:400,700);
+/*variables*/
+@typeface-family:Times New Roman, Times, serif;
+@typeface-family-digit: 'Dancing Script', cursive;
+/*
+both: 
+'Courgette', cursive; 'Dancing Script', cursive; 'Lobster', cursive;
+'Source Sans Pro', sans-serif;  --> italic is better
+'Roboto Slab', serif;  , 'PT Sans', sans-serif;  ,  'Cabin', sans-serif;, 'Signika', sans-serif;,'Lora', serif; 'PT Serif', serif; , 'Droid Serif', serif; --> very readable and clean
+'Montserrat', sans-serif; --> italic better
+'Abril Fatface', cursive;  --> heavy
+'Ledger', serif; --> very readable (the-ten letter-spacing:-0.2vw)
+*/
+@card-width:6vw;
+@card-height:9vw;
+@card-font-size:0.48vw;
+@card-border-radius:5%;
+@border-suit-size:350%;
+@border-rank-size:300%;
+/*shadows*/
+@shadow1-x:0;
+@shadow1-y:@card-width/5;
+@shadow1-blur:2*@card-width/5;
+@shadow1-alpha:0.3;
+@shadow2-x:0;
+@shadow2-y:8*@card-width/50;
+@shadow2-blur:7*@card-width/50;
+@shadow2-alpha:0.22;
+/*colors*/
+@cards-background-color:#DDD; //#FFF;
+@cards-backface-color:#111;
+@spades-color:#2222ff; //#FFF; //#000;
+@clubs-color:#009900; //#CCC;     //#333; 
+@diams-color:#F00;
+@hearts-color:#DD00DD; //#b71c1c;
+/*background colors*/
+@spades-background-color:#D5A000 ; //#806C15; 
+@clubs-background-color:#ddd; //#CCC;     //#333; 
+@diams-background-color:#003333;
+@hearts-background-color:#222; //#b71c1c;
+/*red and pink can both be a little bit darker in multicolour*/
+/*mixins*/
+.rotate(@deg:180deg) {
+     -ms-transform: rotate(@deg);
+    /* IE 9 */
+    -webkit-transform: rotate(@deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(@deg);
+}
+
+.double-shadow {
+    -webkit-box-shadow: @shadow1-x @shadow1-y @shadow1-blur rgba(0, 0, 0, @shadow1-alpha),@shadow2-x @shadow2-y @shadow2-blur rgba(0, 0, 0, @shadow2-alpha);
+    -moz-box-shadow: @shadow1-x @shadow1-y @shadow1-blur rgba(0, 0, 0, @shadow1-alpha),@shadow2-x @shadow2-y @shadow2-blur rgba(0, 0, 0, @shadow2-alpha);
+    box-shadow: @shadow1-x @shadow1-y @shadow1-blur rgba(0, 0, 0, @shadow1-alpha),@shadow2-x @shadow2-y @shadow2-blur rgba(0, 0, 0, @shadow2-alpha);
+}
+
+
+body {
+    
+    background: #eee;
+}
+
+
+.left-suit,.right-suit,.center-suit ,.backgrd-suit {
+    font-family: @typeface-family;
+}
+.digit {
+    font-family: @typeface-family-digit;
+    font-weight:bold; /*with dancing script*/
+}
+
+.spades {
+    color:@spades-color;
+}
+
+.clubs {
+    color: @clubs-color;
+}
+
+.hearts {
+    color: @hearts-color;
+}
+
+.diams {
+    color: @diams-color;
+}
+
+
+div.fulldeck {
+    height: auto;
+    width: auto;
+    position: relative;
+    margin:30px 0px 30px 0px;
+    .display(flex);
+    .flex-direction(row);
+}
+
+.card-wrapper-normal {
+    position: relative;
+    width: @card-width;
+    height: @card-height;
+    font-size: @card-font-size;
+    margin: auto;
+    background: @cards-background-color;
+    border-radius: @card-border-radius;
+    .double-shadow();
+    &.the-deuce,&.the-three,&.the-four,&.the-five,&.the-six,&.the-seven,&.the-eight,&.the-nine,&.the-ten {
+        .backgrd-suit , .central-rank {
+            display:none;
+        }
+    }
+    &.spades {
+        background:@spades-background-color;
+    }
+    &.clubs {
+        background:@clubs-background-color;
+    }
+    &.diams {
+        background:@diams-background-color;
+    }
+    &.hearts {
+        background:@hearts-background-color;
+    }
+}
+
+.card-wrapper-small {
+    position: relative;
+    width: @card-width;
+    height: @card-height;
+    font-size: @card-font-size;
+    margin: auto;
+    background: @cards-background-color;
+    border-radius: @card-border-radius;
+    .double-shadow();
+    &.the-deuce,&.the-three,&.the-four,&.the-five,&.the-six,&.the-seven,&.the-eight,&.the-nine,&.the-ten {
+        & .left-col, .middle-col, .right-col {
+            display:none;
+        }
+    }
+    .left-suit,.right-suit {
+        font-size:@border-suit-size*1.2;
+    }
+    .left-rank, .right-rank {
+        font-size:@border-rank-size*1.2;
+    }
+    &.spades {
+        background:@spades-background-color;
+    }
+    &.clubs {
+        background:@clubs-background-color;
+    }
+    &.diams {
+        background:@diams-background-color;
+    }
+    &.hearts {
+        background:@hearts-background-color;
+    }
+}
+//
+.left-column,.right-column {
+    width: 15%;
+    position: absolute;
+    text-align: center;
+}
+.left-column {  
+    left: 0;
+    top: 0;   
+}
+
+.right-column {
+    right: 0;
+    bottom: 0;
+}
+
+.left-suit {
+    font-size: @border-suit-size;
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.left-rank {
+    font-size: @border-rank-size;
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.right-suit {
+    display: block;
+    font-size: @border-suit-size;
+    font-weight: bold;
+    margin-right: 8%;
+    .rotate();
+}
+
+.right-rank {
+    display: block;
+    font-size: @border-rank-size;
+    font-weight: bold;
+    margin-right: 8%;
+    .rotate();
+}
+
+.center-column {
+    position: absolute;
+    left: 15%;
+    top: 0;
+    width: 70%;
+    height: 100%;
+}
+
+.center-suit {
+    font-size: @card-font-size*4.5;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.up-side-down {
+    .rotate();
+}
+
+.left-col,.right-col {
+    .display(flex);
+    .flex-direction(column);
+    position: absolute;
+    top: 0;
+    width: 33%;
+    height: 100%;
+}
+
+.left-col {
+    left:0;
+}
+.right-col {
+    right:0;
+}
+
+
+.middle-col {
+    .display(flex);
+    .flex-direction(column);
+    .justify-content(space-around);
+    position: absolute;
+    left: 33%;
+    top: 0;
+    width: 34%;
+    height: 100%;
+}
+
+.central-rank {
+    .display(flex);
+    .flex-direction(column);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    & > div {
+       font-size:@card-font-size*11; 
+       line-height:100%;
+       margin: auto;
+    text-align: center;
+    }
+}
+
+.backgrd-suit {
+    text-align: center;
+    vertical-align: middle;
+    & > div {
+        opacity: 0.35;
+        font-size: @card-font-size*19;
+        line-height:92%;
+    }
+}
+
+
+
+.the-ten {
+    .digit {
+        letter-spacing: -0.2vw;
+    }
+    .left-col,.right-col {
+        line-height: 100%;
+    }
+    .center-column  {
+        .center-suit {
+          font-size:@card-font-size*4;  
+        } 
+    }
+    &.card-wrapper-small {
+        .central-rank > .digit {
+            letter-spacing:-0.8vw;
+            font-size:@card-font-size*9.5;
+            margin-left: -0.1vw;
+        }
+    }
+}
+
+.the-nine {
+    .left-col,.right-col {
+        line-height: 100%;
+    }
+}
+
+
+
+

@@ -1,0 +1,21 @@
+@import "compass";
+
+//@import "animate-sass/_animate";
+
+@import "bower_components/animatewithsass/animate.scss";
+
+.crd_zoomIn {
+    @include zoomIn($count: 1s, $duration: 2s, $delay: 1s, $function: ease);
+}
+
+.crd_zoomInDown {
+    @include zoomInDown($count: 1s, $duration: 2s, $delay: 2s, $function: ease);
+}
+
+.crd_zoomInUp {
+    @include zoomInUp($count: 1s, $duration: 2s, $delay: 3s, $function: ease);
+}
+
+.crd_zoomInLeft {
+    @include zoomInLeft($count: 1s, $duration: 2s, $delay: 4s, $function: ease);
+}
