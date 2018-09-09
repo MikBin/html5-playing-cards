@@ -1,0 +1,23 @@
+{
+  "name": "playingcards",
+  "version": "1.0.0",
+  "description": "markup and style for 52 deck playing cards",
+  "main": "stylesheets/cards.css",
+  "dependencies": {
+    "html2canvas": "^1.0.0-alpha.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikBin/html5-playing-cards.git"
+  },
+  "author": "Michele Bini",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikBin/html5-playing-cards/issues"
+  },
+  "homepage": "https://github.com/MikBin/html5-playing-cards#readme"
+}

@@ -1,0 +1,184 @@
+/*icon moon fonts vs &spades: are twice as big*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?a4bicq");
+  src: url("../fonts/icomoon.eot?a4bicq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?a4bicq") format("truetype"), url("../fonts/icomoon.woff?a4bicq") format("woff"), url("../fonts/icomoon.svg?a4bicq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+%icon-settings {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%default-settings {
+  font-family: Times New Roman, Times, serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*icon- will hold all prebild fonts from svgs
+while default-  uses browsers unicode suits &spades;*/
+.icon-spades {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e917";
+  }
+}
+
+.icon-clubs {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e918";
+  }
+}
+
+.icon-diamonds {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e919";
+  }
+}
+
+.icon-hearts {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e9da";
+  }
+}
+
+.icon-joker-one {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e9e9";
+  }
+}
+
+.icon-joker-two {
+  @extend %icon-settings;
+
+  &:before {
+    content: "\e9ea";
+  }
+}
+
+.icon-joker {
+  &:before {
+    content: "\2605";
+  }
+
+  &.white:before {
+    content: "\2606";
+  }
+}
+/*default whites are 1.5 bigger than black ones  ---> reduce to 2/3*/
+.default-spades {
+  @extend %default-settings;
+
+  &:before {
+    content: "\2660";
+  }
+
+  &.white:before {
+    content: "\2664";
+  }
+}
+
+.default-hearts {
+  @extend %default-settings;
+
+  &:before {
+    content: "\2665";
+  }
+
+  &.white:before {
+    content: "\2661";
+  }
+}
+
+.default-diamonds {
+  @extend %default-settings;
+
+  &:before {
+    content: "\2666";
+  }
+
+  &.white:before {
+    content: "\2662";
+  }
+}
+
+.default-clubs {
+  @extend %default-settings;
+
+  &:before {
+    content: "\2663";
+  }
+
+  &.white:before {
+    content: "\2667";
+  }
+}
+
+.default-joker {
+  @extend %default-settings;
+
+  &:before {
+    content: "\2605";
+  }
+
+  &.white:before {
+    content: "\2606";
+  }
+}
+
+.default-joker-one {
+  @extend %default-settings;
+
+  &:before {
+    content: "\1F601";
+  }
+}
+
+.default-joker-two {
+  @extend %default-settings;
+
+  &:before {
+    content: "\1F600";
+  }
+}

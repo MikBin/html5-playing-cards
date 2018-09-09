@@ -1,0 +1,24 @@
+@import "compass";
+@mixin text-shadow($horiz: 0.5em, $vert: 0.5em, $blur: 0px, $color: #000000) {
+  text-shadow: $horiz $vert $blur $color;
+}
+@mixin generateCardClassExtend($prefix,$suit) {
+  @extend .#{$prefix}-#{$suit};
+}
+
+%flex-row {
+  @include display-flex;
+  @include flex-direction(row);
+}
+
+%flex-col-center-evenly {
+  @include display-flex;
+  @include flex-direction(column);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+%flex-col {
+  @include display-flex;
+  @include flex-direction(column);
+}

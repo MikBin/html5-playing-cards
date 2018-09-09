@@ -1,0 +1,49 @@
+@import "all-fonts";
+/*variables*/
+$typeface-family: Times New Roman, Times, serif;
+$typeface-family-digit: 'Montserrat', sans-serif; //"Cabin Sketch", cursive;
+$card-width: 100%;
+$card-height: 100%;
+$suit-size-adj: 0.66;
+$card-font-size: 2.5em;
+$backface-font-size: 30em;
+$bkgrd-suit-top-margin: 0;
+/*3em*/
+$card-border-radius: 5%;
+$border-suit-size: $suit-size-adj*3.5em;
+/*3.5em*/
+$border-rank-size: 2.75em;
+$central-rank-font-size: 2.5em;
+$KQJ-rank-mod: 4.5;
+$central-rank-mod: $suit-size-adj*5;
+$background-suit-mod: $suit-size-adj*6;
+$central-suit-size-mod: $suit-size-adj*1.7;
+$center-suit-size-mod: $suit-size-adj*1.8;
+$joker-size-mod: 0.8;
+$bkg-suit-display: none;
+/*columns sizing*/
+$border-offset: 2%;
+$border-offset-tb: 2%;
+$border-offset-lr: 2%;
+$border-offset-center-top: 2%;
+$side-col-width: 18%;
+$center-col-width: 60%;
+$center-col-height: 96%;
+/*colors*/
+$cards-background-color: #DDD;
+$cards-backface-color: #111;
+$spades-color: #64ffda;
+$clubs-color: #004d40;
+$diams-color: #f50057;
+$hearts-color: #880e4f;
+/*background colors*/
+$spades-background-color: #004d40;
+$clubs-background-color: #64ffda;
+$diams-background-color: #880e4f;
+$hearts-background-color: #f50057;
+$backface-top-background: $hearts-color;
+$backface-top-color: $diams-color;
+$backface-bottom-background: $clubs-color;
+$backface-bottom-color: $spades-color;
+/*prefix config*/
+$prefix-extend: "icon";

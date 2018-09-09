@@ -1,0 +1,49 @@
+@import "all-fonts";
+/*variables*/
+$typeface-family: Times New Roman, Times, serif;
+$typeface-family-digit: "Dancing Script", cursive;
+$card-width: 100%;
+$card-height: 100%;
+$suit-size-adj: 1;
+$card-font-size: 2.5em;
+$backface-font-size: 25em;
+$bkgrd-suit-top-margin: 0;
+/*3em*/
+$card-border-radius: 5%;
+$border-suit-size: $suit-size-adj*3.5em;
+/*3.5em*/
+$border-rank-size: 2.75em;
+$central-rank-font-size: 2.5em;
+$KQJ-rank-mod: 4.5;
+$central-rank-mod: $suit-size-adj*5;
+$background-suit-mod: $suit-size-adj*6;
+$central-suit-size-mod: $suit-size-adj*1.7;
+$center-suit-size-mod: $suit-size-adj*1.8;
+$joker-size-mod: 0.8;
+$bkg-suit-display: block;
+/*columns sizing*/
+$border-offset: 2%;
+$border-offset-tb: 2%;
+$border-offset-lr: 2%;
+$border-offset-center-top: 2%;
+$side-col-width: 18%;
+$center-col-width: 60%;
+$center-col-height: 96%;
+/*colors*/
+$cards-background-color: #DDD; //#FFF;
+$cards-backface-color: #111;
+$spades-color: #2222ff; //#FFF; //#000;
+$clubs-color: #009900; //#CCC;     //#333;
+$diams-color: #F00;
+$hearts-color: #DD00DD; //#b71c1c;
+/*background colors*/
+$spades-background-color: #D5A000; //#806C15;
+$clubs-background-color: #ddd; //#CCC;     //#333;
+$diams-background-color: #003333;
+$hearts-background-color: #222; //#b71c1c;
+$backface-top-background: $hearts-background-color;
+$backface-top-color: $clubs-color;
+$backface-bottom-background: $clubs-background-color;
+$backface-bottom-color: $hearts-color;
+/*prefix config*/
+$prefix-extend: "default";

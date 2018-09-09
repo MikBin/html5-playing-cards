@@ -1,0 +1,440 @@
+@import "compass";
+@import "mixins";
+@import "icon-fonts";
+
+body {
+  background: #eee;
+  margin: 0;
+}
+
+div.fulldeck {
+  width: 100vw;
+  height: 11vw;
+  position: relative;
+  margin: 20px 0;
+  /*@extend %flex-row;*/
+  & > .card-wrapper-normal {
+    width: 7.692vw;
+    height: 10.769vw;
+    font-size: 1vmin;
+    float: left;
+  }
+}
+
+.full-screen-card {
+  width: 135vh;
+  height: 188.6vh;
+  /*189 for traditional*/
+  margin: 0 auto;
+  font-size: 3.5vmin;
+}
+@media screen and (orientation: portrait) {
+  .full-screen-card {
+    width: 100vw;
+    height: 100vh;
+    font-size: 2.5vmin;
+  }
+
+  body {
+    width: 99vw;
+  }
+}
+
+.backgrd-suit,
+.center-suit,
+.left-suit,
+.right-suit {
+  font-family: $typeface-family;
+}
+
+.digit {
+  font-family: $typeface-family-digit;
+  font-weight: bold;
+}
+/*make a function based on a variable that calls default- or icon- such that there's just one changing point*/
+.spades {
+  color: $spades-color;
+
+  .backgrd-suit > div,
+  .center-suit,
+  .left-suit,
+  .right-suit {
+    @include generateCardClassExtend($prefix-extend,"spades");
+  }
+}
+
+.clubs {
+  color: $clubs-color;
+
+  .backgrd-suit > div,
+  .center-suit,
+  .left-suit,
+  .right-suit {
+    @include generateCardClassExtend($prefix-extend,"clubs");
+  }
+}
+
+.hearts {
+  color: $hearts-color;
+
+  .backgrd-suit > div,
+  .center-suit,
+  .left-suit,
+  .right-suit {
+    @include generateCardClassExtend($prefix-extend,"hearts");
+  }
+}
+
+.diams {
+  color: $diams-color;
+
+  .backgrd-suit > div,
+  .center-suit,
+  .left-suit,
+  .right-suit {
+    @include generateCardClassExtend($prefix-extend,"diamonds");
+  }
+}
+
+.joker {
+  .backgrd-suit > div,
+  .center-suit,
+  .left-suit,
+  .right-suit {
+    @include generateCardClassExtend($prefix-extend,"joker");
+  }
+
+  &.one {
+    color: $spades-color;
+    background-color: $hearts-color;
+
+    .central-rank > div {
+      @include generateCardClassExtend($prefix-extend,"joker-one");
+    }
+  }
+
+  &.two {
+    color: $diams-color;
+    background-color: $clubs-color;
+
+    .central-rank > div {
+      @include generateCardClassExtend($prefix-extend,"joker-two");
+    }
+  }
+}
+
+.card-wrapper-normal {
+  position: relative;
+  width: $card-width;
+  height: $card-height;
+  font-size: $card-font-size;
+  margin: auto;
+  background: $cards-background-color;
+  border-radius: $card-border-radius;
+
+  &.joker {
+    font-size: $card-font-size*$joker-size-mod;
+  }
+
+  &.the-deuce,
+  &.the-eight,
+  &.the-five,
+  &.the-four,
+  &.the-nine,
+  &.the-seven,
+  &.the-six,
+  &.the-ten,
+  &.the-three {
+    .backgrd-suit,
+    .central-rank {
+      display: none;
+    }
+  }
+
+  &.spades {
+    background: $spades-background-color;
+  }
+
+  &.clubs {
+    background: $clubs-background-color;
+  }
+
+  &.diams {
+    background: $diams-background-color;
+  }
+
+  &.hearts {
+    background: $hearts-background-color;
+  }
+}
+
+.card-wrapper-small {
+  position: relative;
+  width: $card-width;
+  height: $card-height;
+  font-size: $card-font-size;
+  margin: auto;
+  background: $cards-background-color;
+  border-radius: $card-border-radius;
+  /*@extend %double-shadow;*/
+  &.the-deuce,
+  &.the-eight,
+  &.the-five,
+  &.the-four,
+  &.the-nine,
+  &.the-seven,
+  &.the-six,
+  &.the-ten,
+  &.the-three {
+    & .left-col,
+    .middle-col,
+    .right-col {
+      display: none;
+    }
+  }
+
+  .left-suit,
+  .right-suit {
+    font-size: $border-suit-size * 1.2;
+  }
+
+  .left-rank,
+  .right-rank {
+    font-size: $border-rank-size * 1.2;
+  }
+
+  &.spades {
+    background: $spades-background-color;
+  }
+
+  &.clubs {
+    background: $clubs-background-color;
+  }
+
+  &.diams {
+    background: $diams-background-color;
+  }
+
+  &.hearts {
+    background: $hearts-background-color;
+  }
+}
+
+.left-column,
+.right-column {
+  width: $side-col-width;
+  position: absolute;
+  text-align: center;
+}
+
+.left-column {
+  left: $border-offset-lr;
+  top: $border-offset-tb;
+}
+
+.right-column {
+  right: $border-offset-lr;
+  bottom: $border-offset-tb;
+}
+
+.center-column {
+  position: absolute;
+  left: $side-col-width+$border-offset-lr;
+  top: $border-offset-center-top;
+  width: $center-col-width;
+  height: $center-col-height;
+}
+
+.left-suit {
+  font-size: $border-suit-size;
+  font-weight: bold;
+  /*margin-left: 8%;*/
+}
+
+.left-rank {
+  font-size: $border-rank-size;
+  font-weight: bold;
+  /*margin-left: 8%;*/
+}
+
+.right-suit {
+  display: block;
+  font-size: $border-suit-size;
+  font-weight: bold;
+  /*margin-right: 8%;*/
+  @include rotate(180deg);
+}
+
+.right-rank {
+  display: block;
+  font-size: $border-rank-size;
+  font-weight: bold;
+  /*margin-right: 8%;*/
+  @include rotate(180deg);
+}
+
+.center-suit {
+  font-size: $card-font-size *$center-suit-size-mod;
+  width: 100%;
+  text-align: center;
+}
+
+.up-side-down {
+  @include rotate(180deg);
+}
+
+.left-col,
+.right-col {
+  @extend %flex-col-center-evenly;
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 100%;
+}
+
+.left-col {
+  left: 0;
+}
+
+.right-col {
+  right: 0;
+}
+
+.middle-col {
+  @extend %flex-col-center-evenly;
+  position: absolute;
+  left: 33%;
+  top: 0;
+  width: 34%;
+  height: 100%;
+}
+
+.clubs,
+.hearts {
+  .center-suit {
+    font-size: $card-font-size * $central-suit-size-mod;
+  }
+}
+
+.central-rank {
+  @extend %flex-col-center-evenly;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  & > div {
+    font-size: $card-font-size * $central-rank-mod !important;
+    line-height: 100%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.joker {
+  .central-rank > div {
+    font-size: $card-font-size * $KQJ-rank-mod !important;
+  }
+}
+/*
+.hearts {
+    .central-rank > div {
+        font-size: $central-rank-font-size * 4.5;
+    }
+
+    .backgrd-suit > div {
+        font-size: $card-font-size * 5;
+    }
+
+    .center-suit {
+        font-size: $central-rank-font-size * 1.8;
+    }
+}
+
+.clubs {
+    .central-rank > div {
+        font-size: $central-rank-font-size * 4.5;
+    }
+
+    .backgrd-suit > div {
+        font-size: $card-font-size * 5;
+    }
+
+    .center-suit {
+        font-size: $central-rank-font-size * 1.8;
+    }
+}*/
+.the-jack,
+.the-king,
+.the-queen {
+  .central-rank > div {
+    font-size: ($central-rank-font-size * $KQJ-rank-mod) !important;
+  }
+}
+
+.backgrd-suit {
+  text-align: center;
+  vertical-align: middle;
+  display: $bkg-suit-display;
+
+  & > div {
+    opacity: 0.35;
+    font-size: $card-font-size * $background-suit-mod;
+    margin-top: $bkgrd-suit-top-margin;
+  }
+}
+
+.the-ten {
+  .digit {
+    letter-spacing: -0.1em;
+    font-size: 0.9em;
+  }
+
+  &.card-wrapper-small {
+    .central-rank > .digit {
+      letter-spacing: -0.8vw;
+      font-size: $card-font-size * 9.5;
+      margin-left: -0.1vw;
+    }
+  }
+}
+
+.backface {
+  font-size: $backface-font-size;
+  font-family: $typeface-family-digit;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  .top-half {
+    height: 50%;
+    background-color: $backface-top-background;
+    color: $backface-top-color;
+    text-align: center;
+    @extend %flex-col;
+    justify-content: flex-end;
+
+    & > div {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: -0.2em;
+    }
+  }
+
+  .bottom-half {
+    height: 50%;
+    background-color: $backface-bottom-background;
+    color: $backface-bottom-color;
+    @extend %flex-col;
+    justify-content: start;
+
+    & > div {
+      text-align: center;
+      width: 100%;
+      text-transform: uppercase;
+      margin-top: -0.2em;
+      @include rotate(180deg);
+    }
+  }
+}

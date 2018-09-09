@@ -1,0 +1,77 @@
+@import "all-fonts";
+/*variables*/
+$typeface-family: Times New Roman, Times, serif;
+$typeface-family-digit: "Cabin", sans-serif;
+$card-width: 100%;
+$card-height: 100%;
+$suit-size-adj: 1;
+$card-font-size: 2.5em;
+$backface-font-size: 30em;
+$bkgrd-suit-top-margin: 0;
+/*3em*/
+$card-border-radius: 5%;
+$border-suit-size: $suit-size-adj*3.5em;
+/*3.5em*/
+$border-rank-size: 2.75em;
+$central-rank-font-size: 2.5em;
+$KQJ-rank-mod: 4.5;
+$central-rank-mod: $suit-size-adj*5;
+$background-suit-mod: $suit-size-adj*6;
+$central-suit-size-mod: $suit-size-adj*1.7;
+$center-suit-size-mod: $suit-size-adj*1.8;
+$joker-size-mod: 0.8;
+$bkg-suit-display: block;
+/*columns sizing*/
+$border-offset: 2%;
+$border-offset-tb: 2%;
+$border-offset-lr: 2%;
+$border-offset-center-top: 2%;
+$side-col-width: 18%;
+$center-col-width: 60%;
+$center-col-height: 96%;
+/*colors*/
+$cards-background-color: #DDD;
+$cards-backface-color: #111;
+$spades-color: #1A5276;
+$clubs-color: #0E6655;
+$diams-color: #7B241C;
+$hearts-color: #76448A;
+/*background colors*/
+$spades-background-color: #A9CCE3;
+$clubs-background-color: #A2D9CE;
+$diams-background-color: #E6B0AA;
+$hearts-background-color: #D7BDE2;
+$backface-top-background: $hearts-color;
+$backface-top-color: $diams-color;
+$backface-bottom-background: $clubs-color;
+$backface-bottom-color: $spades-color;
+/*prefix config*/
+$prefix-extend: "default";
+/*blurs
+.spades {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($spades-color, 20%));
+  }
+}
+
+.diams {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($diams-color, 20%));
+  }
+}
+
+.clubs {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($clubs-color, 20%));
+  }
+}
+
+.hearts {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($hearts-color, 20%));
+  }
+}*/
