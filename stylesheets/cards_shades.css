@@ -1,2 +1,984 @@
-@import url(https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro:400,700|Lora:400,700,700italic|Montserrat:400,700|PT+Sans:400,700italic,700|Roboto+Slab:400,700|Droid+Serif:400,700,700italic|Merriweather:400,700,700italic|Arimo:400,700,700italic|Indie+Flower|Roboto|Titillium+Web:400,700,700italic|PT+Serif:400,700,700italic|Lobster|Lobster+Two:400,700,700italic|Cabin:400,700,700italic|Cabin+Condensed|Cabin+Sketch:400,700|Old+Standard+TT:400,700|Abril+Fatface|Gravitas+One|Amaranth:400,700,700italic|Ledger|Signika:400,700|Dancing+Script:400,700);@import url(https://fonts.googleapis.com/css?family=Audiowide|Bangers|Bungee+Inline|Cabin+Sketch|Freckle+Face|Fredericka+the+Great|Frijole|Leckerli+One|Love+Ya+Like+A+Sister|Patrick+Hand|Press+Start+2P|Shojumaru|Special+Elite);@import url(https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Shade|Ceviche+One|Creepster|Emilys+Candy|Finger+Paint|Freckle+Face|Kaushan+Script|Knewave|Lemonada|Metamorphous|Miltonian|Permanent+Marker|Rye|Shojumaru|Shrikhand|Skranji|Slackey|Unlock|Vast+Shadow);.left-col,.right-col,.middle-col,.central-rank{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;align-items:center;justify-content:space-evenly}.backface .top-half,.backface .bottom-half{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?a4bicq");src:url("../fonts/icomoon.eot?a4bicq#iefix") format("embedded-opentype"),url("../fonts/icomoon.ttf?a4bicq") format("truetype"),url("../fonts/icomoon.woff?a4bicq") format("woff"),url("../fonts/icomoon.svg?a4bicq#icomoon") format("svg");font-weight:normal;font-style:normal}.icon-spades,.icon-clubs,.icon-diamonds,.icon-hearts,.icon-joker-one,.icon-joker-two{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.default-spades,.spades .backgrd-suit>div,.spades .center-suit,.spades .left-suit,.spades .right-suit,.default-hearts,.hearts .backgrd-suit>div,.hearts .center-suit,.hearts .left-suit,.hearts .right-suit,.default-diamonds,.diams .backgrd-suit>div,.diams .center-suit,.diams .left-suit,.diams .right-suit,.default-clubs,.clubs .backgrd-suit>div,.clubs .center-suit,.clubs .left-suit,.clubs .right-suit,.default-joker,.joker .backgrd-suit>div,.joker .center-suit,.joker .left-suit,.joker .right-suit,.default-joker-one,.joker.one .central-rank>div,.default-joker-two,.joker.two .central-rank>div{font-family:Times New Roman, Times, serif;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="icon-"],[class*=" icon-"]{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-spades:before{content:"\e917"}.icon-clubs:before{content:"\e918"}.icon-diamonds:before{content:"\e919"}.icon-hearts:before{content:"\e9da"}.icon-joker-one:before{content:"\e9e9"}.icon-joker-two:before{content:"\e9ea"}.icon-joker:before{content:"\2605"}.icon-joker.white:before{content:"\2606"}.default-spades:before,.spades .backgrd-suit>div:before,.spades .center-suit:before,.spades .left-suit:before,.spades .right-suit:before{content:"\2660"}.default-spades.white:before,.spades .backgrd-suit>div.white:before,.spades .white.center-suit:before,.spades .white.left-suit:before,.spades .white.right-suit:before{content:"\2664"}.default-hearts:before,.hearts .backgrd-suit>div:before,.hearts .center-suit:before,.hearts .left-suit:before,.hearts .right-suit:before{content:"\2665"}.default-hearts.white:before,.hearts .backgrd-suit>div.white:before,.hearts .white.center-suit:before,.hearts .white.left-suit:before,.hearts .white.right-suit:before{content:"\2661"}.default-diamonds:before,.diams .backgrd-suit>div:before,.diams .center-suit:before,.diams .left-suit:before,.diams .right-suit:before{content:"\2666"}.default-diamonds.white:before,.diams .backgrd-suit>div.white:before,.diams .white.center-suit:before,.diams .white.left-suit:before,.diams .white.right-suit:before{content:"\2662"}.default-clubs:before,.clubs .backgrd-suit>div:before,.clubs .center-suit:before,.clubs .left-suit:before,.clubs .right-suit:before{content:"\2663"}.default-clubs.white:before,.clubs .backgrd-suit>div.white:before,.clubs .white.center-suit:before,.clubs .white.left-suit:before,.clubs .white.right-suit:before{content:"\2667"}.default-joker:before,.joker .backgrd-suit>div:before,.joker .center-suit:before,.joker .left-suit:before,.joker .right-suit:before{content:"\2605"}.default-joker.white:before,.joker .backgrd-suit>div.white:before,.joker .white.center-suit:before,.joker .white.left-suit:before,.joker .white.right-suit:before{content:"\2606"}.default-joker-one:before,.joker.one .central-rank>div:before{content:"\1F601"}.default-joker-two:before,.joker.two .central-rank>div:before{content:"\1F600"}.left-col,.right-col,.middle-col,.central-rank{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;align-items:center;justify-content:space-evenly}.backface .top-half,.backface .bottom-half{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot?a4bicq");src:url("../fonts/icomoon.eot?a4bicq#iefix") format("embedded-opentype"),url("../fonts/icomoon.ttf?a4bicq") format("truetype"),url("../fonts/icomoon.woff?a4bicq") format("woff"),url("../fonts/icomoon.svg?a4bicq#icomoon") format("svg");font-weight:normal;font-style:normal}.icon-spades,.icon-clubs,.icon-diamonds,.icon-hearts,.icon-joker-one,.icon-joker-two{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.default-spades,.spades .backgrd-suit>div,.spades .center-suit,.spades .left-suit,.spades .right-suit,.default-hearts,.hearts .backgrd-suit>div,.hearts .center-suit,.hearts .left-suit,.hearts .right-suit,.default-diamonds,.diams .backgrd-suit>div,.diams .center-suit,.diams .left-suit,.diams .right-suit,.default-clubs,.clubs .backgrd-suit>div,.clubs .center-suit,.clubs .left-suit,.clubs .right-suit,.default-joker,.joker .backgrd-suit>div,.joker .center-suit,.joker .left-suit,.joker .right-suit,.default-joker-one,.joker.one .central-rank>div,.default-joker-two,.joker.two .central-rank>div{font-family:Times New Roman, Times, serif;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}[class^="icon-"],[class*=" icon-"]{font-family:'icomoon' !important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-spades:before{content:"\e917"}.icon-clubs:before{content:"\e918"}.icon-diamonds:before{content:"\e919"}.icon-hearts:before{content:"\e9da"}.icon-joker-one:before{content:"\e9e9"}.icon-joker-two:before{content:"\e9ea"}.icon-joker:before{content:"\2605"}.icon-joker.white:before{content:"\2606"}.default-spades:before,.spades .backgrd-suit>div:before,.spades .center-suit:before,.spades .left-suit:before,.spades .right-suit:before{content:"\2660"}.default-spades.white:before,.spades .backgrd-suit>div.white:before,.spades .white.center-suit:before,.spades .white.left-suit:before,.spades .white.right-suit:before{content:"\2664"}.default-hearts:before,.hearts .backgrd-suit>div:before,.hearts .center-suit:before,.hearts .left-suit:before,.hearts .right-suit:before{content:"\2665"}.default-hearts.white:before,.hearts .backgrd-suit>div.white:before,.hearts .white.center-suit:before,.hearts .white.left-suit:before,.hearts .white.right-suit:before{content:"\2661"}.default-diamonds:before,.diams .backgrd-suit>div:before,.diams .center-suit:before,.diams .left-suit:before,.diams .right-suit:before{content:"\2666"}.default-diamonds.white:before,.diams .backgrd-suit>div.white:before,.diams .white.center-suit:before,.diams .white.left-suit:before,.diams .white.right-suit:before{content:"\2662"}.default-clubs:before,.clubs .backgrd-suit>div:before,.clubs .center-suit:before,.clubs .left-suit:before,.clubs .right-suit:before{content:"\2663"}.default-clubs.white:before,.clubs .backgrd-suit>div.white:before,.clubs .white.center-suit:before,.clubs .white.left-suit:before,.clubs .white.right-suit:before{content:"\2667"}.default-joker:before,.joker .backgrd-suit>div:before,.joker .center-suit:before,.joker .left-suit:before,.joker .right-suit:before{content:"\2605"}.default-joker.white:before,.joker .backgrd-suit>div.white:before,.joker .white.center-suit:before,.joker .white.left-suit:before,.joker .white.right-suit:before{content:"\2606"}.default-joker-one:before,.joker.one .central-rank>div:before{content:"\1F601"}.default-joker-two:before,.joker.two .central-rank>div:before{content:"\1F600"}body{background:#eee;margin:0}div.fulldeck{width:100vw;height:11vw;position:relative;margin:20px 0}div.fulldeck>.card-wrapper-normal{width:7.692vw;height:10.769vw;font-size:1vmin;float:left}.full-screen-card{width:135vh;height:188.6vh;margin:0 auto;font-size:3.5vmin}@media screen and (orientation: portrait){.full-screen-card{width:100vw;height:100vh;font-size:2.5vmin}body{width:99vw}}.backgrd-suit,.center-suit,.left-suit,.right-suit{font-family:Times New Roman,Times,serif}.digit{font-family:"Cabin",sans-serif;font-weight:bold}.spades{color:#1A5276}.clubs{color:#0E6655}.hearts{color:#76448A}.diams{color:#7B241C}.joker.one{color:#1A5276;background-color:#76448A}.joker.two{color:#7B241C;background-color:#0E6655}.card-wrapper-normal{position:relative;width:100%;height:100%;font-size:2.5em;margin:auto;background:#DDD;border-radius:5%}.card-wrapper-normal.joker{font-size:2em}.card-wrapper-normal.the-deuce .backgrd-suit,.card-wrapper-normal.the-deuce .central-rank,.card-wrapper-normal.the-eight .backgrd-suit,.card-wrapper-normal.the-eight .central-rank,.card-wrapper-normal.the-five .backgrd-suit,.card-wrapper-normal.the-five .central-rank,.card-wrapper-normal.the-four .backgrd-suit,.card-wrapper-normal.the-four .central-rank,.card-wrapper-normal.the-nine .backgrd-suit,.card-wrapper-normal.the-nine .central-rank,.card-wrapper-normal.the-seven .backgrd-suit,.card-wrapper-normal.the-seven .central-rank,.card-wrapper-normal.the-six .backgrd-suit,.card-wrapper-normal.the-six .central-rank,.card-wrapper-normal.the-ten .backgrd-suit,.card-wrapper-normal.the-ten .central-rank,.card-wrapper-normal.the-three .backgrd-suit,.card-wrapper-normal.the-three .central-rank{display:none}.card-wrapper-normal.spades{background:#A9CCE3}.card-wrapper-normal.clubs{background:#A2D9CE}.card-wrapper-normal.diams{background:#E6B0AA}.card-wrapper-normal.hearts{background:#D7BDE2}.card-wrapper-small{position:relative;width:100%;height:100%;font-size:2.5em;margin:auto;background:#DDD;border-radius:5%}.card-wrapper-small.the-deuce .left-col,.card-wrapper-small.the-deuce .middle-col,.card-wrapper-small.the-deuce .right-col,.card-wrapper-small.the-eight .left-col,.card-wrapper-small.the-eight .middle-col,.card-wrapper-small.the-eight .right-col,.card-wrapper-small.the-five .left-col,.card-wrapper-small.the-five .middle-col,.card-wrapper-small.the-five .right-col,.card-wrapper-small.the-four .left-col,.card-wrapper-small.the-four .middle-col,.card-wrapper-small.the-four .right-col,.card-wrapper-small.the-nine .left-col,.card-wrapper-small.the-nine .middle-col,.card-wrapper-small.the-nine .right-col,.card-wrapper-small.the-seven .left-col,.card-wrapper-small.the-seven .middle-col,.card-wrapper-small.the-seven .right-col,.card-wrapper-small.the-six .left-col,.card-wrapper-small.the-six .middle-col,.card-wrapper-small.the-six .right-col,.card-wrapper-small.the-ten .left-col,.card-wrapper-small.the-ten .middle-col,.card-wrapper-small.the-ten .right-col,.card-wrapper-small.the-three .left-col,.card-wrapper-small.the-three .middle-col,.card-wrapper-small.the-three .right-col{display:none}.card-wrapper-small .left-suit,.card-wrapper-small .right-suit{font-size:4.2em}.card-wrapper-small .left-rank,.card-wrapper-small .right-rank{font-size:3.3em}.card-wrapper-small.spades{background:#A9CCE3}.card-wrapper-small.clubs{background:#A2D9CE}.card-wrapper-small.diams{background:#E6B0AA}.card-wrapper-small.hearts{background:#D7BDE2}.left-column,.right-column{width:18%;position:absolute;text-align:center}.left-column{left:2%;top:2%}.right-column{right:2%;bottom:2%}.center-column{position:absolute;left:20%;top:2%;width:60%;height:96%}.left-suit{font-size:3.5em;font-weight:bold}.left-rank{font-size:2.75em;font-weight:bold}.right-suit{display:block;font-size:3.5em;font-weight:bold;-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg)}.right-rank{display:block;font-size:2.75em;font-weight:bold;-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg)}.center-suit{font-size:4.5em;width:100%;text-align:center}.up-side-down{-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg)}.left-col,.right-col{position:absolute;top:0;width:33%;height:100%}.left-col{left:0}.right-col{right:0}.middle-col{position:absolute;left:33%;top:0;width:34%;height:100%}.clubs .center-suit,.hearts .center-suit{font-size:4.25em}.central-rank{position:absolute;left:0;top:0;width:100%;height:100%}.central-rank>div{font-size:12.5em !important;line-height:100%;margin:auto;text-align:center}.joker .central-rank>div{font-size:11.25em !important}.the-jack .central-rank>div,.the-king .central-rank>div,.the-queen .central-rank>div{font-size:11.25em !important}.backgrd-suit{text-align:center;vertical-align:middle;display:block}.backgrd-suit>div{opacity:0.35;font-size:15em;margin-top:0}.the-ten .digit{letter-spacing:-0.1em;font-size:0.9em}.the-ten.card-wrapper-small .central-rank>.digit{letter-spacing:-0.8vw;font-size:23.75em;margin-left:-0.1vw}.backface{font-size:30em;font-family:"Cabin",sans-serif;text-transform:uppercase;font-weight:bold}.backface .top-half{height:50%;background-color:#76448A;color:#7B241C;text-align:center;justify-content:flex-end}.backface .top-half>div{width:100%;text-transform:uppercase;text-align:center;margin-bottom:-0.2em}.backface .bottom-half{height:50%;background-color:#0E6655;color:#1A5276;justify-content:start}.backface .bottom-half>div{text-align:center;width:100%;text-transform:uppercase;margin-top:-0.2em;-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+@import url(https://fonts.googleapis.com/css?family=Courgette|Source+Sans+Pro:400,700|Lora:400,700,700italic|Montserrat:400,700|PT+Sans:400,700italic,700|Roboto+Slab:400,700|Droid+Serif:400,700,700italic|Merriweather:400,700,700italic|Arimo:400,700,700italic|Indie+Flower|Roboto|Titillium+Web:400,700,700italic|PT+Serif:400,700,700italic|Lobster|Lobster+Two:400,700,700italic|Cabin:400,700,700italic|Cabin+Condensed|Cabin+Sketch:400,700|Old+Standard+TT:400,700|Abril+Fatface|Gravitas+One|Amaranth:400,700,700italic|Ledger|Signika:400,700|Dancing+Script:400,700);
+@import url(https://fonts.googleapis.com/css?family=Audiowide|Bangers|Bungee+Inline|Cabin+Sketch|Freckle+Face|Fredericka+the+Great|Frijole|Leckerli+One|Love+Ya+Like+A+Sister|Patrick+Hand|Press+Start+2P|Shojumaru|Special+Elite);
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One|Bungee+Shade|Ceviche+One|Creepster|Emilys+Candy|Finger+Paint|Freckle+Face|Kaushan+Script|Knewave|Lemonada|Metamorphous|Miltonian|Permanent+Marker|Rye|Shojumaru|Shrikhand|Skranji|Slackey|Unlock|Vast+Shadow);
+/* line 14, ../sass/_mixins.scss */
+.left-col,
+.right-col, .middle-col, .central-rank {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* line 21, ../sass/_mixins.scss */
+.backface .top-half, .backface .bottom-half {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/*icon moon fonts vs &spades: are twice as big*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?a4bicq");
+  src: url("../fonts/icomoon.eot?a4bicq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?a4bicq") format("truetype"), url("../fonts/icomoon.woff?a4bicq") format("woff"), url("../fonts/icomoon.svg?a4bicq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 10, ../sass/_icon-fonts.scss */
+.icon-spades, .icon-clubs, .icon-diamonds, .icon-hearts, .icon-joker-one, .icon-joker-two {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, ../sass/_icon-fonts.scss */
+.default-spades, .spades .backgrd-suit > div,
+.spades .center-suit,
+.spades .central-rank > span.back-shade,
+.spades .left-suit,
+.spades .right-suit, .default-hearts, .hearts .backgrd-suit > div,
+.hearts .center-suit,
+.hearts .central-rank > span.back-shade,
+.hearts .left-suit,
+.hearts .right-suit, .default-diamonds, .diams .backgrd-suit > div,
+.diams .center-suit,
+.diams .central-rank > span.back-shade,
+.diams .left-suit,
+.diams .right-suit, .default-clubs, .clubs .backgrd-suit > div,
+.clubs .center-suit,
+.clubs .central-rank > span.back-shade,
+.clubs .left-suit,
+.clubs .right-suit, .default-joker, .joker .backgrd-suit > div,
+.joker .center-suit,
+.joker .central-rank > span.back-shade,
+.joker .left-suit,
+.joker .right-suit, .default-joker-one, .joker.one .central-rank > div, .default-joker-two, .joker.two .central-rank > div {
+  font-family: Times New Roman, Times, serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 36, ../sass/_icon-fonts.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*icon- will hold all prebild fonts from svgs
+while default-  uses browsers unicode suits &spades;*/
+/* line 55, ../sass/_icon-fonts.scss */
+.icon-spades:before {
+  content: "\e917";
+}
+
+/* line 63, ../sass/_icon-fonts.scss */
+.icon-clubs:before {
+  content: "\e918";
+}
+
+/* line 71, ../sass/_icon-fonts.scss */
+.icon-diamonds:before {
+  content: "\e919";
+}
+
+/* line 79, ../sass/_icon-fonts.scss */
+.icon-hearts:before {
+  content: "\e9da";
+}
+
+/* line 87, ../sass/_icon-fonts.scss */
+.icon-joker-one:before {
+  content: "\e9e9";
+}
+
+/* line 95, ../sass/_icon-fonts.scss */
+.icon-joker-two:before {
+  content: "\e9ea";
+}
+
+/* line 101, ../sass/_icon-fonts.scss */
+.icon-joker:before {
+  content: "\2605";
+}
+/* line 105, ../sass/_icon-fonts.scss */
+.icon-joker.white:before {
+  content: "\2606";
+}
+
+/*default whites are 1.5 bigger than black ones  ---> reduce to 2/3*/
+/* line 113, ../sass/_icon-fonts.scss */
+.default-spades:before, .spades .backgrd-suit > div:before,
+.spades .center-suit:before,
+.spades .central-rank > span.back-shade:before,
+.spades .left-suit:before,
+.spades .right-suit:before {
+  content: "\2660";
+}
+/* line 117, ../sass/_icon-fonts.scss */
+.default-spades.white:before, .spades .backgrd-suit > div.white:before,
+.spades .white.center-suit:before,
+.spades .central-rank > span.white.back-shade:before,
+.spades .white.left-suit:before,
+.spades .white.right-suit:before {
+  content: "\2664";
+}
+
+/* line 125, ../sass/_icon-fonts.scss */
+.default-hearts:before, .hearts .backgrd-suit > div:before,
+.hearts .center-suit:before,
+.hearts .central-rank > span.back-shade:before,
+.hearts .left-suit:before,
+.hearts .right-suit:before {
+  content: "\2665";
+}
+/* line 129, ../sass/_icon-fonts.scss */
+.default-hearts.white:before, .hearts .backgrd-suit > div.white:before,
+.hearts .white.center-suit:before,
+.hearts .central-rank > span.white.back-shade:before,
+.hearts .white.left-suit:before,
+.hearts .white.right-suit:before {
+  content: "\2661";
+}
+
+/* line 137, ../sass/_icon-fonts.scss */
+.default-diamonds:before, .diams .backgrd-suit > div:before,
+.diams .center-suit:before,
+.diams .central-rank > span.back-shade:before,
+.diams .left-suit:before,
+.diams .right-suit:before {
+  content: "\2666";
+}
+/* line 141, ../sass/_icon-fonts.scss */
+.default-diamonds.white:before, .diams .backgrd-suit > div.white:before,
+.diams .white.center-suit:before,
+.diams .central-rank > span.white.back-shade:before,
+.diams .white.left-suit:before,
+.diams .white.right-suit:before {
+  content: "\2662";
+}
+
+/* line 149, ../sass/_icon-fonts.scss */
+.default-clubs:before, .clubs .backgrd-suit > div:before,
+.clubs .center-suit:before,
+.clubs .central-rank > span.back-shade:before,
+.clubs .left-suit:before,
+.clubs .right-suit:before {
+  content: "\2663";
+}
+/* line 153, ../sass/_icon-fonts.scss */
+.default-clubs.white:before, .clubs .backgrd-suit > div.white:before,
+.clubs .white.center-suit:before,
+.clubs .central-rank > span.white.back-shade:before,
+.clubs .white.left-suit:before,
+.clubs .white.right-suit:before {
+  content: "\2667";
+}
+
+/* line 161, ../sass/_icon-fonts.scss */
+.default-joker:before, .joker .backgrd-suit > div:before,
+.joker .center-suit:before,
+.joker .central-rank > span.back-shade:before,
+.joker .left-suit:before,
+.joker .right-suit:before {
+  content: "\2605";
+}
+/* line 165, ../sass/_icon-fonts.scss */
+.default-joker.white:before, .joker .backgrd-suit > div.white:before,
+.joker .white.center-suit:before,
+.joker .central-rank > span.white.back-shade:before,
+.joker .white.left-suit:before,
+.joker .white.right-suit:before {
+  content: "\2606";
+}
+
+/* line 173, ../sass/_icon-fonts.scss */
+.default-joker-one:before, .joker.one .central-rank > div:before {
+  content: "\1F601";
+}
+
+/* line 181, ../sass/_icon-fonts.scss */
+.default-joker-two:before, .joker.two .central-rank > div:before {
+  content: "\1F600";
+}
+
+/*
+both:
+'Courgette', cursive; 'Dancing Script', cursive; 'Lobster', cursive;
+'Source Sans Pro', sans-serif;  --> italic is better
+'Roboto Slab', serif;  , 'PT Sans', sans-serif;  ,  'Cabin', sans-serif;, 'Signika', sans-serif;,'Lora', serif; 'PT Serif', serif;
+, 'Droid Serif', serif; --> very readable and clean
+'Montserrat', sans-serif; --> italic better
+'Abril Fatface', cursive;  --> heavy
+'Ledger', serif; --> very readable (the-ten letter-spacing:-0.2vw)
+
+font-family: 'Bangers', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Audiowide', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Special Elite', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Leckerli One', cursive;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Freckle Face', cursive;
+font-family: 'Bungee Inline', cursive;
+font-family: 'Shojumaru', cursive;
+font-family: 'Frijole', cursive;
+
+
+font-family: 'Permanent Marker', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Metamorphous', cursive;
+font-family: 'Unlock', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Skranji', cursive;
+font-family: 'Black Ops One', cursive;
+font-family: 'Ceviche One', cursive;
+font-family: 'Freckle Face', cursive;
+font-family: 'Knewave', cursive;
+font-family: 'Miltonian', cursive;
+font-family: 'Shojumaru', cursive;
+font-family: 'Vast Shadow', cursive;
+font-family: 'Lemonada', cursive;
+font-family: 'Emilys Candy', cursive;
+font-family: 'Rye', cursive;
+font-family: 'Bungee Shade', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Finger Paint', cursive;
+font-family: 'Slackey', cursive;
+*/
+/*variables*/
+/*3em*/
+/*3.5em*/
+/*columns sizing*/
+/*colors*/
+/*background colors*/
+/*prefix config*/
+/*blurs
+.spades {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($spades-color, 20%));
+  }
+}
+
+.diams {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($diams-color, 20%));
+  }
+}
+
+.clubs {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($clubs-color, 20%));
+  }
+}
+
+.hearts {
+  .center-suit,
+  .digit {
+    @include text-shadow(0, 0, 0.25em, darken($hearts-color, 20%));
+  }
+}*/
+/* line 14, ../sass/_mixins.scss */
+.left-col,
+.right-col, .middle-col, .central-rank {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* line 21, ../sass/_mixins.scss */
+.backface .top-half, .backface .bottom-half {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+/*icon moon fonts vs &spades: are twice as big*/
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?a4bicq");
+  src: url("../fonts/icomoon.eot?a4bicq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?a4bicq") format("truetype"), url("../fonts/icomoon.woff?a4bicq") format("woff"), url("../fonts/icomoon.svg?a4bicq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 10, ../sass/_icon-fonts.scss */
+.icon-spades, .icon-clubs, .icon-diamonds, .icon-hearts, .icon-joker-one, .icon-joker-two {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, ../sass/_icon-fonts.scss */
+.default-spades, .spades .backgrd-suit > div,
+.spades .center-suit,
+.spades .central-rank > span.back-shade,
+.spades .left-suit,
+.spades .right-suit, .default-hearts, .hearts .backgrd-suit > div,
+.hearts .center-suit,
+.hearts .central-rank > span.back-shade,
+.hearts .left-suit,
+.hearts .right-suit, .default-diamonds, .diams .backgrd-suit > div,
+.diams .center-suit,
+.diams .central-rank > span.back-shade,
+.diams .left-suit,
+.diams .right-suit, .default-clubs, .clubs .backgrd-suit > div,
+.clubs .center-suit,
+.clubs .central-rank > span.back-shade,
+.clubs .left-suit,
+.clubs .right-suit, .default-joker, .joker .backgrd-suit > div,
+.joker .center-suit,
+.joker .central-rank > span.back-shade,
+.joker .left-suit,
+.joker .right-suit, .default-joker-one, .joker.one .central-rank > div, .default-joker-two, .joker.two .central-rank > div {
+  font-family: Times New Roman, Times, serif;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 36, ../sass/_icon-fonts.scss */
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*icon- will hold all prebild fonts from svgs
+while default-  uses browsers unicode suits &spades;*/
+/* line 55, ../sass/_icon-fonts.scss */
+.icon-spades:before {
+  content: "\e917";
+}
+
+/* line 63, ../sass/_icon-fonts.scss */
+.icon-clubs:before {
+  content: "\e918";
+}
+
+/* line 71, ../sass/_icon-fonts.scss */
+.icon-diamonds:before {
+  content: "\e919";
+}
+
+/* line 79, ../sass/_icon-fonts.scss */
+.icon-hearts:before {
+  content: "\e9da";
+}
+
+/* line 87, ../sass/_icon-fonts.scss */
+.icon-joker-one:before {
+  content: "\e9e9";
+}
+
+/* line 95, ../sass/_icon-fonts.scss */
+.icon-joker-two:before {
+  content: "\e9ea";
+}
+
+/* line 101, ../sass/_icon-fonts.scss */
+.icon-joker:before {
+  content: "\2605";
+}
+/* line 105, ../sass/_icon-fonts.scss */
+.icon-joker.white:before {
+  content: "\2606";
+}
+
+/*default whites are 1.5 bigger than black ones  ---> reduce to 2/3*/
+/* line 113, ../sass/_icon-fonts.scss */
+.default-spades:before, .spades .backgrd-suit > div:before,
+.spades .center-suit:before,
+.spades .central-rank > span.back-shade:before,
+.spades .left-suit:before,
+.spades .right-suit:before {
+  content: "\2660";
+}
+/* line 117, ../sass/_icon-fonts.scss */
+.default-spades.white:before, .spades .backgrd-suit > div.white:before,
+.spades .white.center-suit:before,
+.spades .central-rank > span.white.back-shade:before,
+.spades .white.left-suit:before,
+.spades .white.right-suit:before {
+  content: "\2664";
+}
+
+/* line 125, ../sass/_icon-fonts.scss */
+.default-hearts:before, .hearts .backgrd-suit > div:before,
+.hearts .center-suit:before,
+.hearts .central-rank > span.back-shade:before,
+.hearts .left-suit:before,
+.hearts .right-suit:before {
+  content: "\2665";
+}
+/* line 129, ../sass/_icon-fonts.scss */
+.default-hearts.white:before, .hearts .backgrd-suit > div.white:before,
+.hearts .white.center-suit:before,
+.hearts .central-rank > span.white.back-shade:before,
+.hearts .white.left-suit:before,
+.hearts .white.right-suit:before {
+  content: "\2661";
+}
+
+/* line 137, ../sass/_icon-fonts.scss */
+.default-diamonds:before, .diams .backgrd-suit > div:before,
+.diams .center-suit:before,
+.diams .central-rank > span.back-shade:before,
+.diams .left-suit:before,
+.diams .right-suit:before {
+  content: "\2666";
+}
+/* line 141, ../sass/_icon-fonts.scss */
+.default-diamonds.white:before, .diams .backgrd-suit > div.white:before,
+.diams .white.center-suit:before,
+.diams .central-rank > span.white.back-shade:before,
+.diams .white.left-suit:before,
+.diams .white.right-suit:before {
+  content: "\2662";
+}
+
+/* line 149, ../sass/_icon-fonts.scss */
+.default-clubs:before, .clubs .backgrd-suit > div:before,
+.clubs .center-suit:before,
+.clubs .central-rank > span.back-shade:before,
+.clubs .left-suit:before,
+.clubs .right-suit:before {
+  content: "\2663";
+}
+/* line 153, ../sass/_icon-fonts.scss */
+.default-clubs.white:before, .clubs .backgrd-suit > div.white:before,
+.clubs .white.center-suit:before,
+.clubs .central-rank > span.white.back-shade:before,
+.clubs .white.left-suit:before,
+.clubs .white.right-suit:before {
+  content: "\2667";
+}
+
+/* line 161, ../sass/_icon-fonts.scss */
+.default-joker:before, .joker .backgrd-suit > div:before,
+.joker .center-suit:before,
+.joker .central-rank > span.back-shade:before,
+.joker .left-suit:before,
+.joker .right-suit:before {
+  content: "\2605";
+}
+/* line 165, ../sass/_icon-fonts.scss */
+.default-joker.white:before, .joker .backgrd-suit > div.white:before,
+.joker .white.center-suit:before,
+.joker .central-rank > span.white.back-shade:before,
+.joker .white.left-suit:before,
+.joker .white.right-suit:before {
+  content: "\2606";
+}
+
+/* line 173, ../sass/_icon-fonts.scss */
+.default-joker-one:before, .joker.one .central-rank > div:before {
+  content: "\1F601";
+}
+
+/* line 181, ../sass/_icon-fonts.scss */
+.default-joker-two:before, .joker.two .central-rank > div:before {
+  content: "\1F600";
+}
+
+/* line 5, ../sass/_cards_one.scss */
+body {
+  background: #eee;
+  margin: 0;
+}
+
+/* line 10, ../sass/_cards_one.scss */
+div.fulldeck {
+  width: 100vw;
+  height: 11vw;
+  position: relative;
+  margin: 20px 0;
+  /*@extend %flex-row;*/
+}
+/* line 16, ../sass/_cards_one.scss */
+div.fulldeck > .card-wrapper-normal {
+  width: 7.692vw;
+  height: 10.769vw;
+  font-size: 1vmin;
+  float: left;
+}
+
+/* line 24, ../sass/_cards_one.scss */
+.full-screen-card {
+  width: 1644px;
+  height: 2244px;
+  /*189 for traditional*/
+  margin: 0 auto;
+  font-size: 3.5vmin;
+}
+
+@media screen and (orientation: portrait) {
+  /* line 32, ../sass/_cards_one.scss */
+  .full-screen-card {
+    width: 100vw;
+    height: 100vh;
+    font-size: 2.5vmin;
+  }
+
+  /* line 38, ../sass/_cards_one.scss */
+  body {
+    width: 99vw;
+  }
+}
+/* line 43, ../sass/_cards_one.scss */
+.backgrd-suit,
+.center-suit,
+.left-suit,
+.right-suit {
+  font-family: Times New Roman, Times, serif;
+}
+
+/* line 50, ../sass/_cards_one.scss */
+.digit {
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+}
+
+/*make a function based on a variable that calls default- or icon- such that there's just one changing point*/
+/* line 55, ../sass/_cards_one.scss */
+.spades {
+  color: #1A5276;
+}
+
+/* line 67, ../sass/_cards_one.scss */
+.clubs {
+  color: #0E6655;
+}
+
+/* line 79, ../sass/_cards_one.scss */
+.hearts {
+  color: #76448A;
+}
+
+/* line 91, ../sass/_cards_one.scss */
+.diams {
+  color: #7B241C;
+}
+
+/* line 112, ../sass/_cards_one.scss */
+.joker.one {
+  color: #1A5276;
+  background-color: #76448A;
+}
+/* line 121, ../sass/_cards_one.scss */
+.joker.two {
+  color: #7B241C;
+  background-color: #0E6655;
+}
+
+/* line 131, ../sass/_cards_one.scss */
+.card-wrapper-normal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5em;
+  margin: auto;
+  background: #DDD;
+  border-radius: 0;
+}
+/* line 140, ../sass/_cards_one.scss */
+.card-wrapper-normal.joker {
+  font-size: 2em;
+}
+/* line 153, ../sass/_cards_one.scss */
+.card-wrapper-normal.the-deuce .backgrd-suit,
+.card-wrapper-normal.the-deuce .central-rank, .card-wrapper-normal.the-eight .backgrd-suit,
+.card-wrapper-normal.the-eight .central-rank, .card-wrapper-normal.the-five .backgrd-suit,
+.card-wrapper-normal.the-five .central-rank, .card-wrapper-normal.the-four .backgrd-suit,
+.card-wrapper-normal.the-four .central-rank, .card-wrapper-normal.the-nine .backgrd-suit,
+.card-wrapper-normal.the-nine .central-rank, .card-wrapper-normal.the-seven .backgrd-suit,
+.card-wrapper-normal.the-seven .central-rank, .card-wrapper-normal.the-six .backgrd-suit,
+.card-wrapper-normal.the-six .central-rank, .card-wrapper-normal.the-ten .backgrd-suit,
+.card-wrapper-normal.the-ten .central-rank, .card-wrapper-normal.the-three .backgrd-suit,
+.card-wrapper-normal.the-three .central-rank {
+  display: none;
+}
+/* line 159, ../sass/_cards_one.scss */
+.card-wrapper-normal.spades {
+  background: #A9CCE3;
+}
+/* line 163, ../sass/_cards_one.scss */
+.card-wrapper-normal.clubs {
+  background: #A2D9CE;
+}
+/* line 167, ../sass/_cards_one.scss */
+.card-wrapper-normal.diams {
+  background: #E6B0AA;
+}
+/* line 171, ../sass/_cards_one.scss */
+.card-wrapper-normal.hearts {
+  background: #D7BDE2;
+}
+
+/* line 176, ../sass/_cards_one.scss */
+.card-wrapper-small {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 2.5em;
+  margin: auto;
+  background: #DDD;
+  border-radius: 0;
+  /*@extend %double-shadow;*/
+}
+/* line 194, ../sass/_cards_one.scss */
+.card-wrapper-small.the-deuce .left-col,
+.card-wrapper-small.the-deuce .middle-col,
+.card-wrapper-small.the-deuce .right-col, .card-wrapper-small.the-eight .left-col,
+.card-wrapper-small.the-eight .middle-col,
+.card-wrapper-small.the-eight .right-col, .card-wrapper-small.the-five .left-col,
+.card-wrapper-small.the-five .middle-col,
+.card-wrapper-small.the-five .right-col, .card-wrapper-small.the-four .left-col,
+.card-wrapper-small.the-four .middle-col,
+.card-wrapper-small.the-four .right-col, .card-wrapper-small.the-nine .left-col,
+.card-wrapper-small.the-nine .middle-col,
+.card-wrapper-small.the-nine .right-col, .card-wrapper-small.the-seven .left-col,
+.card-wrapper-small.the-seven .middle-col,
+.card-wrapper-small.the-seven .right-col, .card-wrapper-small.the-six .left-col,
+.card-wrapper-small.the-six .middle-col,
+.card-wrapper-small.the-six .right-col, .card-wrapper-small.the-ten .left-col,
+.card-wrapper-small.the-ten .middle-col,
+.card-wrapper-small.the-ten .right-col, .card-wrapper-small.the-three .left-col,
+.card-wrapper-small.the-three .middle-col,
+.card-wrapper-small.the-three .right-col {
+  display: none;
+}
+/* line 201, ../sass/_cards_one.scss */
+.card-wrapper-small .left-suit,
+.card-wrapper-small .right-suit {
+  font-size: 4.2em;
+}
+/* line 206, ../sass/_cards_one.scss */
+.card-wrapper-small .left-rank,
+.card-wrapper-small .right-rank {
+  font-size: 3.3em;
+}
+/* line 211, ../sass/_cards_one.scss */
+.card-wrapper-small.spades {
+  background: #A9CCE3;
+}
+/* line 215, ../sass/_cards_one.scss */
+.card-wrapper-small.clubs {
+  background: #A2D9CE;
+}
+/* line 219, ../sass/_cards_one.scss */
+.card-wrapper-small.diams {
+  background: #E6B0AA;
+}
+/* line 223, ../sass/_cards_one.scss */
+.card-wrapper-small.hearts {
+  background: #D7BDE2;
+}
+
+/* line 228, ../sass/_cards_one.scss */
+.left-column,
+.right-column {
+  width: 15%;
+  position: absolute;
+  text-align: center;
+}
+
+/* line 235, ../sass/_cards_one.scss */
+.left-column {
+  left: 4.5%;
+  top: 3.5%;
+}
+
+/* line 240, ../sass/_cards_one.scss */
+.right-column {
+  right: 4.5%;
+  bottom: 3.5%;
+}
+
+/* line 245, ../sass/_cards_one.scss */
+.center-column {
+  position: absolute;
+  left: 19.5%;
+  top: 3.5%;
+  width: 61%;
+  height: 93%;
+}
+
+/* line 253, ../sass/_cards_one.scss */
+.left-suit {
+  font-size: 3.5em;
+  font-weight: bold;
+  /*margin-left: 8%;*/
+}
+
+/* line 259, ../sass/_cards_one.scss */
+.left-rank {
+  font-size: 2.75em;
+  font-weight: bold;
+  /*margin-left: 8%;*/
+}
+
+/* line 265, ../sass/_cards_one.scss */
+.right-suit {
+  display: block;
+  font-size: 3.5em;
+  font-weight: bold;
+  /*margin-right: 8%;*/
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 273, ../sass/_cards_one.scss */
+.right-rank {
+  display: block;
+  font-size: 2.75em;
+  font-weight: bold;
+  /*margin-right: 8%;*/
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 281, ../sass/_cards_one.scss */
+.center-suit {
+  font-size: 4.5em;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 287, ../sass/_cards_one.scss */
+.up-side-down {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 291, ../sass/_cards_one.scss */
+.left-col,
+.right-col {
+  position: absolute;
+  top: 0;
+  width: 33%;
+  height: 100%;
+}
+
+/* line 300, ../sass/_cards_one.scss */
+.left-col {
+  left: 0;
+}
+
+/* line 304, ../sass/_cards_one.scss */
+.right-col {
+  right: 0;
+}
+
+/* line 308, ../sass/_cards_one.scss */
+.middle-col {
+  position: absolute;
+  left: 33%;
+  top: 0;
+  width: 34%;
+  height: 100%;
+}
+
+/* line 319, ../sass/_cards_one.scss */
+.clubs .center-suit,
+.hearts .center-suit {
+  font-size: 4.25em;
+}
+
+/* line 324, ../sass/_cards_one.scss */
+.central-rank {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 332, ../sass/_cards_one.scss */
+.central-rank > div {
+  font-size: 12.5em !important;
+  line-height: 100%;
+  margin: auto;
+  text-align: center;
+}
+/* line 339, ../sass/_cards_one.scss */
+.central-rank > span.back-shade {
+  position: absolute;
+  display: block;
+  opacity: 0.35;
+  font-size: 15em;
+  margin-top: -0.2em;
+}
+
+/* line 350, ../sass/_cards_one.scss */
+.joker .central-rank > div {
+  font-size: 11.25em !important;
+}
+/* line 354, ../sass/_cards_one.scss */
+.joker .central-rank > span.back-shade {
+  margin-top: -0.4em;
+}
+
+/*
+.hearts {
+    .central-rank > div {
+        font-size: $central-rank-font-size * 4.5;
+    }
+
+    .backgrd-suit > div {
+        font-size: $card-font-size * 5;
+    }
+
+    .center-suit {
+        font-size: $central-rank-font-size * 1.8;
+    }
+}
+
+.clubs {
+    .central-rank > div {
+        font-size: $central-rank-font-size * 4.5;
+    }
+
+    .backgrd-suit > div {
+        font-size: $card-font-size * 5;
+    }
+
+    .center-suit {
+        font-size: $central-rank-font-size * 1.8;
+    }
+}*/
+/* line 390, ../sass/_cards_one.scss */
+.the-jack .central-rank > div,
+.the-king .central-rank > div,
+.the-queen .central-rank > div {
+  font-size: 11.25em !important;
+}
+
+/* line 395, ../sass/_cards_one.scss */
+.backgrd-suit {
+  text-align: center;
+  display: none;
+}
+/* line 399, ../sass/_cards_one.scss */
+.backgrd-suit > div {
+  opacity: 0.35;
+  font-size: 15em;
+  margin-top: -0.2em;
+}
+
+/* line 407, ../sass/_cards_one.scss */
+.the-ten .digit {
+  letter-spacing: -0.1em;
+  font-size: 0.9em;
+}
+/* line 413, ../sass/_cards_one.scss */
+.the-ten.card-wrapper-small .central-rank > .digit {
+  letter-spacing: -0.8vw;
+  font-size: 23.75em;
+  margin-left: -0.1vw;
+}
+
+/* line 421, ../sass/_cards_one.scss */
+.backface {
+  font-size: 30em;
+  font-family: "Cabin", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 427, ../sass/_cards_one.scss */
+.backface .top-half {
+  height: 50%;
+  background-color: #76448A;
+  color: #7B241C;
+  text-align: center;
+  justify-content: flex-end;
+}
+/* line 435, ../sass/_cards_one.scss */
+.backface .top-half > div {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: -0.2em;
+}
+/* line 443, ../sass/_cards_one.scss */
+.backface .bottom-half {
+  height: 50%;
+  background-color: #0E6655;
+  color: #1A5276;
+  justify-content: start;
+}
+/* line 450, ../sass/_cards_one.scss */
+.backface .bottom-half > div {
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: -0.2em;
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
 /*# sourceMappingURL=cards_shades.css.map */

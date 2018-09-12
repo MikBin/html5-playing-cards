@@ -7,9 +7,9 @@ $card-height: 100%;
 $suit-size-adj: 1;
 $card-font-size: 2.5em;
 $backface-font-size: 30em;
-$bkgrd-suit-top-margin: 0;
+$bkgrd-suit-top-margin: -0.2em;
 /*3em*/
-$card-border-radius: 5%;
+$card-border-radius: 0;
 $border-suit-size: $suit-size-adj*3.5em;
 /*3.5em*/
 $border-rank-size: 2.75em;
@@ -22,13 +22,13 @@ $center-suit-size-mod: $suit-size-adj*1.8;
 $joker-size-mod: 0.8;
 $bkg-suit-display: block;
 /*columns sizing*/
-$border-offset: 2%;
-$border-offset-tb: 2%;
-$border-offset-lr: 2%;
-$border-offset-center-top: 2%;
-$side-col-width: 18%;
-$center-col-width: 60%;
-$center-col-height: 96%;
+$border-offset: 4.5%;
+$border-offset-tb: 3.5%;
+$border-offset-lr: 4.5%;
+$border-offset-center-top: 3.5%;
+$side-col-width: 15%;
+$center-col-width: 61%;
+$center-col-height: 93%;
 /*colors*/
 $cards-background-color: #DDD;
 $cards-backface-color: #111;

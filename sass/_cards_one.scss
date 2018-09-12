@@ -22,8 +22,8 @@ div.fulldeck {
 }
 
 .full-screen-card {
-  width: 135vh;
-  height: 188.6vh;
+  width: 1644px; //135vh;
+  height: 2244px; //188.6vh;
   /*189 for traditional*/
   margin: 0 auto;
   font-size: 3.5vmin;
@@ -57,6 +57,7 @@ div.fulldeck {
 
   .backgrd-suit > div,
   .center-suit,
+  .central-rank > span.back-shade,
   .left-suit,
   .right-suit {
     @include generateCardClassExtend($prefix-extend,"spades");
@@ -68,6 +69,7 @@ div.fulldeck {
 
   .backgrd-suit > div,
   .center-suit,
+  .central-rank > span.back-shade,
   .left-suit,
   .right-suit {
     @include generateCardClassExtend($prefix-extend,"clubs");
@@ -79,6 +81,7 @@ div.fulldeck {
 
   .backgrd-suit > div,
   .center-suit,
+  .central-rank > span.back-shade,
   .left-suit,
   .right-suit {
     @include generateCardClassExtend($prefix-extend,"hearts");
@@ -90,6 +93,7 @@ div.fulldeck {
 
   .backgrd-suit > div,
   .center-suit,
+  .central-rank > span.back-shade,
   .left-suit,
   .right-suit {
     @include generateCardClassExtend($prefix-extend,"diamonds");
@@ -99,6 +103,7 @@ div.fulldeck {
 .joker {
   .backgrd-suit > div,
   .center-suit,
+  .central-rank > span.back-shade,
   .left-suit,
   .right-suit {
     @include generateCardClassExtend($prefix-extend,"joker");
@@ -330,11 +335,25 @@ div.fulldeck {
     margin: auto;
     text-align: center;
   }
+
+  & > span.back-shade {
+    position: absolute;
+    display: $bkg-suit-display;
+    opacity: 0.35;
+    font-size: $card-font-size * $background-suit-mod;
+    margin-top: $bkgrd-suit-top-margin;
+  }
 }
 
 .joker {
-  .central-rank > div {
-    font-size: $card-font-size * $KQJ-rank-mod !important;
+  .central-rank {
+    & > div {
+      font-size: $card-font-size * $KQJ-rank-mod !important;
+    }
+
+    & > span.back-shade {
+      margin-top: -0.4em;
+    }
   }
 }
 /*
@@ -374,9 +393,8 @@ div.fulldeck {
 }
 
 .backgrd-suit {
-  text-align: center;
-  vertical-align: middle;
-  display: $bkg-suit-display;
+  text-align: center; //  display: $bkg-suit-display;
+  display: none;
 
   & > div {
     opacity: 0.35;
