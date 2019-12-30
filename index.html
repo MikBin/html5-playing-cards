@@ -4,12 +4,57 @@
 <head>
 	<title>playing cards</title>
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/cards_shades.css">
+	<link id="stylecss" rel="stylesheet" type="text/css" href="stylesheets/cards_shades.css">
+	<style>
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333333;
+		}
 
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 16px;
+			text-decoration: none;
+		}
+
+		li a:hover {
+			background-color: #111111;
+		}
+
+		li a.active {
+			color: magenta;
+		}
+	</style>
 
 </head>
 
 <body>
+	<ul id="style-options" title="switch styling">
+		<li>
+			<a href="#" rel="stylesheets/cards_standard.css">Standard White Deck</a>
+		</li>
+		<li>
+			<a href="#" rel="stylesheets/cards_black.css">Black Deck</a>
+		</li>
+		<li>
+			<a href="#" rel="stylesheets/cards_fullcolor.css">Four Colorful</a>
+		</li>
+		<li>
+			<a href="#" rel="stylesheets/cards_inverted.css">Inverted Two Colors Deck</a>
+		</li>
+		<li>
+			<a class="active" href="#" rel="stylesheets/cards_shades.css">Shades Deck</a>
+		</li>
+	</ul>
 
 	<!-- spades -->
 	<div class="fulldeck"></div>
@@ -23,11 +68,11 @@
 	<div class="fulldeck">
 	</div>
 
-	<div class="full-screen-card" style="width:15.7vh; height:22vh; font-size:0.4vmin; float:left">
+	<div class="full-screen-card" style="width:15.7vh; height:22vh; font-size:0.4vmin; float:left; ">
 
 	</div>
 
-	<div class="full-screen-card" style="width:15.7vh; height:22vh; font-size:0.4vmin; float:left;">
+	<div class="full-screen-card" style="width:15.7vh; height:22vh; font-size:0.4vmin; float:left; ">
 
 	</div>
 
@@ -37,6 +82,7 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/jQuery.style.switcher.min.js"></script>
 <script src="js/cards_one_template.js"></script>
 <script src="js/cards_show.js"></script>
 

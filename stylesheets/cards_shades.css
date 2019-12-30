@@ -550,39 +550,41 @@ div.fulldeck {
   height: 11vw;
   position: relative;
   margin: 20px 0;
+  display: flex;
   /*@extend %flex-row;*/
 }
-/* line 16, ../sass/_cards_one.scss */
+/* line 18, ../sass/_cards_one.scss */
 div.fulldeck > .card-wrapper-normal {
   width: 7.692vw;
   height: 10.769vw;
   font-size: 1vmin;
   float: left;
+  margin-right: 10px;
 }
 
-/* line 24, ../sass/_cards_one.scss */
+/* line 27, ../sass/_cards_one.scss */
 .full-screen-card {
   width: 1644px;
   height: 2244px;
   /*189 for traditional*/
-  margin: 0 auto;
+  margin: 0 10px;
   font-size: 3.5vmin;
 }
 
 @media screen and (orientation: portrait) {
-  /* line 32, ../sass/_cards_one.scss */
+  /* line 36, ../sass/_cards_one.scss */
   .full-screen-card {
     width: 100vw;
     height: 100vh;
     font-size: 2.5vmin;
   }
 
-  /* line 38, ../sass/_cards_one.scss */
+  /* line 42, ../sass/_cards_one.scss */
   body {
     width: 99vw;
   }
 }
-/* line 43, ../sass/_cards_one.scss */
+/* line 47, ../sass/_cards_one.scss */
 .backgrd-suit,
 .center-suit,
 .left-suit,
@@ -590,45 +592,45 @@ div.fulldeck > .card-wrapper-normal {
   font-family: Times New Roman, Times, serif;
 }
 
-/* line 50, ../sass/_cards_one.scss */
+/* line 54, ../sass/_cards_one.scss */
 .digit {
   font-family: "Cabin", sans-serif;
   font-weight: bold;
 }
 
 /*make a function based on a variable that calls default- or icon- such that there's just one changing point*/
-/* line 55, ../sass/_cards_one.scss */
+/* line 60, ../sass/_cards_one.scss */
 .spades {
   color: #1A5276;
 }
 
-/* line 67, ../sass/_cards_one.scss */
+/* line 72, ../sass/_cards_one.scss */
 .clubs {
   color: #0E6655;
 }
 
-/* line 79, ../sass/_cards_one.scss */
+/* line 84, ../sass/_cards_one.scss */
 .hearts {
   color: #76448A;
 }
 
-/* line 91, ../sass/_cards_one.scss */
+/* line 96, ../sass/_cards_one.scss */
 .diams {
   color: #7B241C;
 }
 
-/* line 112, ../sass/_cards_one.scss */
+/* line 118, ../sass/_cards_one.scss */
 .joker.one {
   color: #1A5276;
   background-color: #76448A;
 }
-/* line 121, ../sass/_cards_one.scss */
+/* line 127, ../sass/_cards_one.scss */
 .joker.two {
   color: #7B241C;
   background-color: #0E6655;
 }
 
-/* line 131, ../sass/_cards_one.scss */
+/* line 137, ../sass/_cards_one.scss */
 .card-wrapper-normal {
   position: relative;
   width: 100%;
@@ -638,11 +640,11 @@ div.fulldeck > .card-wrapper-normal {
   background: #DDD;
   border-radius: 0;
 }
-/* line 140, ../sass/_cards_one.scss */
+/* line 146, ../sass/_cards_one.scss */
 .card-wrapper-normal.joker {
   font-size: 2em;
 }
-/* line 153, ../sass/_cards_one.scss */
+/* line 160, ../sass/_cards_one.scss */
 .card-wrapper-normal.the-deuce .backgrd-suit,
 .card-wrapper-normal.the-deuce .central-rank, .card-wrapper-normal.the-eight .backgrd-suit,
 .card-wrapper-normal.the-eight .central-rank, .card-wrapper-normal.the-five .backgrd-suit,
@@ -655,24 +657,24 @@ div.fulldeck > .card-wrapper-normal {
 .card-wrapper-normal.the-three .central-rank {
   display: none;
 }
-/* line 159, ../sass/_cards_one.scss */
+/* line 166, ../sass/_cards_one.scss */
 .card-wrapper-normal.spades {
   background: #A9CCE3;
 }
-/* line 163, ../sass/_cards_one.scss */
+/* line 170, ../sass/_cards_one.scss */
 .card-wrapper-normal.clubs {
   background: #A2D9CE;
 }
-/* line 167, ../sass/_cards_one.scss */
+/* line 174, ../sass/_cards_one.scss */
 .card-wrapper-normal.diams {
   background: #E6B0AA;
 }
-/* line 171, ../sass/_cards_one.scss */
+/* line 178, ../sass/_cards_one.scss */
 .card-wrapper-normal.hearts {
   background: #D7BDE2;
 }
 
-/* line 176, ../sass/_cards_one.scss */
+/* line 183, ../sass/_cards_one.scss */
 .card-wrapper-small {
   position: relative;
   width: 100%;
@@ -683,7 +685,7 @@ div.fulldeck > .card-wrapper-normal {
   border-radius: 0;
   /*@extend %double-shadow;*/
 }
-/* line 194, ../sass/_cards_one.scss */
+/* line 203, ../sass/_cards_one.scss */
 .card-wrapper-small.the-deuce .left-col,
 .card-wrapper-small.the-deuce .middle-col,
 .card-wrapper-small.the-deuce .right-col, .card-wrapper-small.the-eight .left-col,
@@ -705,34 +707,34 @@ div.fulldeck > .card-wrapper-normal {
 .card-wrapper-small.the-three .right-col {
   display: none;
 }
-/* line 201, ../sass/_cards_one.scss */
+/* line 210, ../sass/_cards_one.scss */
 .card-wrapper-small .left-suit,
 .card-wrapper-small .right-suit {
   font-size: 4.2em;
 }
-/* line 206, ../sass/_cards_one.scss */
+/* line 215, ../sass/_cards_one.scss */
 .card-wrapper-small .left-rank,
 .card-wrapper-small .right-rank {
   font-size: 3.3em;
 }
-/* line 211, ../sass/_cards_one.scss */
+/* line 220, ../sass/_cards_one.scss */
 .card-wrapper-small.spades {
   background: #A9CCE3;
 }
-/* line 215, ../sass/_cards_one.scss */
+/* line 224, ../sass/_cards_one.scss */
 .card-wrapper-small.clubs {
   background: #A2D9CE;
 }
-/* line 219, ../sass/_cards_one.scss */
+/* line 228, ../sass/_cards_one.scss */
 .card-wrapper-small.diams {
   background: #E6B0AA;
 }
-/* line 223, ../sass/_cards_one.scss */
+/* line 232, ../sass/_cards_one.scss */
 .card-wrapper-small.hearts {
   background: #D7BDE2;
 }
 
-/* line 228, ../sass/_cards_one.scss */
+/* line 237, ../sass/_cards_one.scss */
 .left-column,
 .right-column {
   width: 15%;
@@ -740,19 +742,19 @@ div.fulldeck > .card-wrapper-normal {
   text-align: center;
 }
 
-/* line 235, ../sass/_cards_one.scss */
+/* line 244, ../sass/_cards_one.scss */
 .left-column {
   left: 4.5%;
   top: 3.5%;
 }
 
-/* line 240, ../sass/_cards_one.scss */
+/* line 249, ../sass/_cards_one.scss */
 .right-column {
   right: 4.5%;
   bottom: 3.5%;
 }
 
-/* line 245, ../sass/_cards_one.scss */
+/* line 254, ../sass/_cards_one.scss */
 .center-column {
   position: absolute;
   left: 19.5%;
@@ -761,21 +763,21 @@ div.fulldeck > .card-wrapper-normal {
   height: 93%;
 }
 
-/* line 253, ../sass/_cards_one.scss */
+/* line 262, ../sass/_cards_one.scss */
 .left-suit {
   font-size: 3.5em;
   font-weight: bold;
   /*margin-left: 8%;*/
 }
 
-/* line 259, ../sass/_cards_one.scss */
+/* line 268, ../sass/_cards_one.scss */
 .left-rank {
   font-size: 2.75em;
   font-weight: bold;
   /*margin-left: 8%;*/
 }
 
-/* line 265, ../sass/_cards_one.scss */
+/* line 274, ../sass/_cards_one.scss */
 .right-suit {
   display: block;
   font-size: 3.5em;
@@ -787,7 +789,7 @@ div.fulldeck > .card-wrapper-normal {
   transform: rotate(180deg);
 }
 
-/* line 273, ../sass/_cards_one.scss */
+/* line 282, ../sass/_cards_one.scss */
 .right-rank {
   display: block;
   font-size: 2.75em;
@@ -799,14 +801,14 @@ div.fulldeck > .card-wrapper-normal {
   transform: rotate(180deg);
 }
 
-/* line 281, ../sass/_cards_one.scss */
+/* line 290, ../sass/_cards_one.scss */
 .center-suit {
   font-size: 4.5em;
   width: 100%;
   text-align: center;
 }
 
-/* line 287, ../sass/_cards_one.scss */
+/* line 296, ../sass/_cards_one.scss */
 .up-side-down {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
@@ -814,7 +816,7 @@ div.fulldeck > .card-wrapper-normal {
   transform: rotate(180deg);
 }
 
-/* line 291, ../sass/_cards_one.scss */
+/* line 300, ../sass/_cards_one.scss */
 .left-col,
 .right-col {
   position: absolute;
@@ -823,17 +825,17 @@ div.fulldeck > .card-wrapper-normal {
   height: 100%;
 }
 
-/* line 300, ../sass/_cards_one.scss */
+/* line 309, ../sass/_cards_one.scss */
 .left-col {
   left: 0;
 }
 
-/* line 304, ../sass/_cards_one.scss */
+/* line 313, ../sass/_cards_one.scss */
 .right-col {
   right: 0;
 }
 
-/* line 308, ../sass/_cards_one.scss */
+/* line 317, ../sass/_cards_one.scss */
 .middle-col {
   position: absolute;
   left: 33%;
@@ -842,13 +844,13 @@ div.fulldeck > .card-wrapper-normal {
   height: 100%;
 }
 
-/* line 319, ../sass/_cards_one.scss */
+/* line 328, ../sass/_cards_one.scss */
 .clubs .center-suit,
 .hearts .center-suit {
   font-size: 4.25em;
 }
 
-/* line 324, ../sass/_cards_one.scss */
+/* line 333, ../sass/_cards_one.scss */
 .central-rank {
   position: absolute;
   left: 0;
@@ -856,14 +858,14 @@ div.fulldeck > .card-wrapper-normal {
   width: 100%;
   height: 100%;
 }
-/* line 332, ../sass/_cards_one.scss */
+/* line 341, ../sass/_cards_one.scss */
 .central-rank > div {
   font-size: 12.5em !important;
   line-height: 100%;
   margin: auto;
   text-align: center;
 }
-/* line 339, ../sass/_cards_one.scss */
+/* line 348, ../sass/_cards_one.scss */
 .central-rank > span.back-shade {
   position: absolute;
   display: block;
@@ -872,11 +874,11 @@ div.fulldeck > .card-wrapper-normal {
   margin-top: -0.2em;
 }
 
-/* line 350, ../sass/_cards_one.scss */
+/* line 359, ../sass/_cards_one.scss */
 .joker .central-rank > div {
   font-size: 11.25em !important;
 }
-/* line 354, ../sass/_cards_one.scss */
+/* line 363, ../sass/_cards_one.scss */
 .joker .central-rank > span.back-shade {
   margin-top: -0.4em;
 }
@@ -909,45 +911,45 @@ div.fulldeck > .card-wrapper-normal {
         font-size: $central-rank-font-size * 1.8;
     }
 }*/
-/* line 390, ../sass/_cards_one.scss */
+/* line 400, ../sass/_cards_one.scss */
 .the-jack .central-rank > div,
 .the-king .central-rank > div,
 .the-queen .central-rank > div {
   font-size: 11.25em !important;
 }
 
-/* line 395, ../sass/_cards_one.scss */
+/* line 405, ../sass/_cards_one.scss */
 .backgrd-suit {
   text-align: center;
   display: none;
 }
-/* line 399, ../sass/_cards_one.scss */
+/* line 409, ../sass/_cards_one.scss */
 .backgrd-suit > div {
   opacity: 0.35;
   font-size: 15em;
   margin-top: -0.2em;
 }
 
-/* line 407, ../sass/_cards_one.scss */
+/* line 417, ../sass/_cards_one.scss */
 .the-ten .digit {
   letter-spacing: -0.1em;
   font-size: 0.9em;
 }
-/* line 413, ../sass/_cards_one.scss */
+/* line 423, ../sass/_cards_one.scss */
 .the-ten.card-wrapper-small .central-rank > .digit {
   letter-spacing: -0.8vw;
   font-size: 23.75em;
   margin-left: -0.1vw;
 }
 
-/* line 421, ../sass/_cards_one.scss */
+/* line 431, ../sass/_cards_one.scss */
 .backface {
   font-size: 30em;
   font-family: "Cabin", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 427, ../sass/_cards_one.scss */
+/* line 437, ../sass/_cards_one.scss */
 .backface .top-half {
   height: 50%;
   background-color: #76448A;
@@ -955,21 +957,21 @@ div.fulldeck > .card-wrapper-normal {
   text-align: center;
   justify-content: flex-end;
 }
-/* line 435, ../sass/_cards_one.scss */
+/* line 445, ../sass/_cards_one.scss */
 .backface .top-half > div {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: -0.2em;
 }
-/* line 443, ../sass/_cards_one.scss */
+/* line 453, ../sass/_cards_one.scss */
 .backface .bottom-half {
   height: 50%;
   background-color: #0E6655;
   color: #1A5276;
   justify-content: start;
 }
-/* line 450, ../sass/_cards_one.scss */
+/* line 460, ../sass/_cards_one.scss */
 .backface .bottom-half > div {
   text-align: center;
   width: 100%;

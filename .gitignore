@@ -1,3 +1,4 @@
 .sass-cache
 inspiration
 sass/bower_components
+.vscode/*
